@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Anshika0412/Assignment_ArubaNetworks/static/css/main.68f21d03.css",
+    "main.js": "/Anshika0412/Assignment_ArubaNetworks/static/js/main.4c71e443.js",
+    "index.html": "/Anshika0412/Assignment_ArubaNetworks/index.html",
+    "main.68f21d03.css.map": "/Anshika0412/Assignment_ArubaNetworks/static/css/main.68f21d03.css.map",
+    "main.4c71e443.js.map": "/Anshika0412/Assignment_ArubaNetworks/static/js/main.4c71e443.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.68f21d03.css",
+    "static/js/main.4c71e443.js"
+  ]
+}
