@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+#  React Auth Flow — SignUp, Login & Home Page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a **React-based Authentication App** built using **functional components**, **custom hooks**, and **Tailwind CSS** for styling.  
+It allows users to **sign up**, **log in**, and access a **protected home page**, with user data stored locally via `localStorage`.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+##  Features
 
-### `npm start`
+###  User Authentication
+- **Sign Up** — Create a new account with username, email, and password.  
+  - Includes input validation (empty fields, password length, matching passwords).
+  - Prevents duplicate email registration.
+- **Login** — Allows existing users to log in using saved credentials.
+  - Validates user email and password before granting access.
+- **Home Page (Protected)** — Displays a personalized welcome message.
+  - Redirects unauthenticated users to the login page.
+  - Includes a **Logout** button to end session.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+##  Custom Hooks
 
-### `npm test`
+###  `useSignUp`
+Handles:
+- Managing form state (`formData`)
+- Validating input fields (username, email, password)
+- Storing new users in `localStorage`
+- Automatically logging in and navigating to `/home` upon successful signup
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+###  `useLogin`
+Handles:
+- Form input management
+- Error handling for invalid credentials
+- Login verification using users saved in `localStorage`
+- Redirecting logged-in users to the home page
 
-### `npm run build`
+Both hooks keep logic **modular and reusable**, improving code clarity and separation of concerns.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+##  Styling
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+All UI is built using **Tailwind CSS** — providing a clean, responsive, and mobile-friendly layout:
+- Forms are centered and styled with green-accented borders.
+- Buttons include hover transitions.
+- Layout automatically adjusts for mobile, tablet, and desktop screens.
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+##  Tech Stack
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+| Tool / Library | Purpose |
+|-----------------|----------|
+| **React** | Frontend UI framework |
+| **React Router DOM** | Page navigation |
+| **Tailwind CSS** | Styling and responsiveness |
+| **LocalStorage API** | Storing users and sessions locally |
+| **Custom Hooks** | Managing form logic and reusability |
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## How It Works
 
-## Learn More
+ 1. Sign Up:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+     - Enter your details and create an account.
+     - Data is validated and stored in localStorage.
+     - User is auto-logged-in and redirected to the Home page.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+  2. Login:
 
-### Code Splitting
+    - Enter registered email and password.
+    - App validates credentials and logs in user.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+  3. Home Page:
 
-### Analyzing the Bundle Size
+   - Displays logged-in user's name.
+   - Clicking "Logout" clears session and redirects to login.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
