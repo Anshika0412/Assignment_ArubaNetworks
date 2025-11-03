@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/Anshika0412/Assignment_ArubaNetworks/static/css/main.68f21d03.css",
-    "main.js": "/Anshika0412/Assignment_ArubaNetworks/static/js/main.1a11b778.js",
-    "index.html": "/Anshika0412/Assignment_ArubaNetworks/index.html",
-    "main.68f21d03.css.map": "/Anshika0412/Assignment_ArubaNetworks/static/css/main.68f21d03.css.map",
-    "main.1a11b778.js.map": "/Anshika0412/Assignment_ArubaNetworks/static/js/main.1a11b778.js.map"
+    "main.css": "/Assignment_ArubaNetworks/static/css/main.68f21d03.css",
+    "main.js": "/Assignment_ArubaNetworks/static/js/main.1a11b778.js",
+    "index.html": "/Assignment_ArubaNetworks/index.html",
+    "main.68f21d03.css.map": "/Assignment_ArubaNetworks/static/css/main.68f21d03.css.map",
+    "main.1a11b778.js.map": "/Assignment_ArubaNetworks/static/js/main.1a11b778.js.map"
   },
   "entrypoints": [
     "static/css/main.68f21d03.css",
